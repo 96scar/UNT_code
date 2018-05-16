@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\srj0101\Desktop\Lab2_ScarlettJones\Lab2_csce3730_srj0101\mux8to1.ncd
+OUTFILE=C:\Users\srj0101\Desktop\Lab2_ScarlettJones\Lab2_csce3730_srj0101\mux8to1.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\srj0101\Desktop\Lab2_ScarlettJones\Lab2_csce3730_srj0101
+LICENSE=ISE
+USER_INFO=210900639_1777510574_210611495_125

@@ -1,0 +1,36 @@
+v (u, w)
+w (u, x)
+x (u, y)
+y (u, z)
+z (u, u)
+--------
+u (v, v)
+w (v, x)
+x (v, y)
+y (v, z)
+z (v, u)
+--------
+u (w, v)
+v (w, w)
+x (w, y)
+y (w, z)
+z (w, u)
+--------
+u (x, v)
+v (x, w)
+w (x, x)
+y (x, z)
+z (x, u)
+--------
+u (y, v)
+v (y, w)
+w (y, x)
+x (y, y)
+z (y, u)
+--------
+u (z, v)
+v (z, w)
+w (z, x)
+x (z, y)
+y (z, z)
+--------

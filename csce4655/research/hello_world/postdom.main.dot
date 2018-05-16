@@ -1,0 +1,17 @@
+digraph "Post dominator tree for 'main' function" {
+	label="Post dominator tree for 'main' function";
+
+	Node0x8365450 [shape=record,label="{Post dominance root node}"];
+	Node0x8365450 -> Node0x8365a30;
+	Node0x8365450 -> Node0x83613a8;
+	Node0x8365450 -> Node0x8364608;
+	Node0x8365a30 [shape=record,label="{%10:\l\l  tail call void @_ZSt16__throw_bad_castv() noreturn\l  unreachable\l}"];
+	Node0x83613a8 [shape=record,label="{%0:\l  %1 = tail call %\"class.std::basic_ostream\"* @_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i(%\"class.std::basic_ostream\"* @_ZSt4cout, i8* getelementptr inbounds ([13 x i8]* @.str, i32 0, i32 0), i32 12)\l  %2 = load i8** bitcast (%\"class.std::basic_ostream\"* @_ZSt4cout to i8**), align 4\l  %3 = getelementptr i8* %2, i32 -12\l  %4 = bitcast i8* %3 to i32*\l  %5 = load i32* %4, align 4\l  %.sum = add i32 %5, 124\l  %6 = getelementptr inbounds i8* bitcast (%\"class.std::basic_ostream\"* @_ZSt4cout to i8*), i32 %.sum\l  %7 = bitcast i8* %6 to %\"class.std::ctype\"**\l  %8 = load %\"class.std::ctype\"** %7, align 4, !tbaa !0\l  %9 = icmp eq %\"class.std::ctype\"* %8, null\l  br i1 %9, label %10, label %_ZSt13__check_facetISt5ctypeIcEERKT_PS3_.exit\l}"];
+	Node0x8364608 [shape=record,label="{_ZNKSt5ctypeIcE5widenEc.exit:                     \l  %.0.i = phi i8 [ %16, %14 ], [ %22, %17 ]\l  %23 = tail call %\"class.std::basic_ostream\"* @_ZNSo3putEc(%\"class.std::basic_ostream\"* @_ZSt4cout, i8 signext %.0.i)\l  %24 = tail call %\"class.std::basic_ostream\"* @_ZNSo5flushEv(%\"class.std::basic_ostream\"* %23)\l  ret i32 0\l}"];
+	Node0x8364608 -> Node0x8361cb0;
+	Node0x8364608 -> Node0x8361320;
+	Node0x8364608 -> Node0x83611b0;
+	Node0x8361cb0 [shape=record,label="{%17:\l\l  tail call void @_ZNKSt5ctypeIcE13_M_widen_initEv(%\"class.std::ctype\"* %8)\l  %18 = bitcast %\"class.std::ctype\"* %8 to i8 (%\"class.std::ctype\"*, i8)***\l  %19 = load i8 (%\"class.std::ctype\"*, i8)*** %18, align 4\l  %20 = getelementptr inbounds i8 (%\"class.std::ctype\"*, i8)** %19, i32 6\l  %21 = load i8 (%\"class.std::ctype\"*, i8)** %20, align 4\l  %22 = tail call signext i8 %21(%\"class.std::ctype\"* %8, i8 signext 10)\l  br label %_ZNKSt5ctypeIcE5widenEc.exit\l}"];
+	Node0x8361320 [shape=record,label="{_ZSt13__check_facetISt5ctypeIcEERKT_PS3_.exit:    \l  %11 = getelementptr inbounds %\"class.std::ctype\"* %8, i32 0, i32 6\l  %12 = load i8* %11, align 1, !tbaa !1\l  %13 = icmp eq i8 %12, 0\l  br i1 %13, label %17, label %14\l}"];
+	Node0x83611b0 [shape=record,label="{%14:\l\l  %15 = getelementptr inbounds %\"class.std::ctype\"* %8, i32 0, i32 7, i32 10\l  %16 = load i8* %15, align 1, !tbaa !1\l  br label %_ZNKSt5ctypeIcE5widenEc.exit\l}"];
+}

@@ -1,0 +1,16 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x82f4f80 [shape=record,label="{%0|{<s0>T|<s1>F}}"];
+	Node0x82f4f80:s0 -> Node0x82f4658;
+	Node0x82f4f80:s1 -> Node0x82f4750;
+	Node0x82f4658 [shape=record,label="{%10}"];
+	Node0x82f4750 [shape=record,label="{_ZSt13__check_facetISt5ctypeIcEERKT_PS3_.exit|{<s0>T|<s1>F}}"];
+	Node0x82f4750:s0 -> Node0x82f89e0;
+	Node0x82f4750:s1 -> Node0x82f8a10;
+	Node0x82f8a10 [shape=record,label="{%14}"];
+	Node0x82f8a10 -> Node0x82f8be8;
+	Node0x82f89e0 [shape=record,label="{%17}"];
+	Node0x82f89e0 -> Node0x82f8be8;
+	Node0x82f8be8 [shape=record,label="{_ZNKSt5ctypeIcE5widenEc.exit}"];
+}

@@ -1,0 +1,17 @@
+digraph "Post dominator tree for 'main' function" {
+	label="Post dominator tree for 'main' function";
+
+	Node0x9879458 [shape=record,label="{Post dominance root node}"];
+	Node0x9879458 -> Node0x9879a38;
+	Node0x9879458 -> Node0x98753a8;
+	Node0x9879458 -> Node0x9878608;
+	Node0x9879a38 [shape=record,label="{%10}"];
+	Node0x98753a8 [shape=record,label="{%0}"];
+	Node0x9878608 [shape=record,label="{_ZNKSt5ctypeIcE5widenEc.exit}"];
+	Node0x9878608 -> Node0x9875cb0;
+	Node0x9878608 -> Node0x9875320;
+	Node0x9878608 -> Node0x98751b0;
+	Node0x9875cb0 [shape=record,label="{%17}"];
+	Node0x9875320 [shape=record,label="{_ZSt13__check_facetISt5ctypeIcEERKT_PS3_.exit}"];
+	Node0x98751b0 [shape=record,label="{%14}"];
+}

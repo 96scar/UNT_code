@@ -1,0 +1,5 @@
+digraph "Post dominator tree for '_GLOBAL__I_a' function" {
+	label="Post dominator tree for '_GLOBAL__I_a' function";
+
+	Node0x9875d90 [shape=record,label="{%0}"];
+}

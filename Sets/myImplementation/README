@@ -1,0 +1,35 @@
+I've made a couple of changes to the code at 10:30 am on Friday, 2/3/17.
+
+	.  I fixed a bug in is_member that didn't actually show up on our
+           CSE virtual machines.  Thank you to the student who brough this 
+           to my attention and will receive extra credit for that.
+
+	.  And I've added a new .h, number.h whose ONLY purpose it to indicate
+           how many sets will be used in the current combination of set code
+           and driver (main.c)
+
+	.  In order to work correctly you probably want to include number.h in
+           your list code.   Although my main.C will create an array of lists
+           (which represent sets in your implementation), you MIGHT want to 
+           include some tests/assertions that you're not accessing that
+           array of sets out of bounds.
+
+
+Students,
+
+     Here's how I would compile and run my Characteristic Vector implementation of sets.
+
+        g++ *.C
+        ./a.out > output
+
+Notice that I'm using redirected output but NOT redirected input.  Instead, I'm including code in main.C to "test" the program.   Main.C looks like the type of main that we'll use to combine with your Set.h and Set.cpp, assuming those are 
+the names that you'll use when you submit.
+
+Then, of course, we'd change the g++ command above to be g++ *.C *.cpp
+
+Send me (Sweany) email if/when you have questions about compiling/running your 
+program.
+
+           Phil
+           sweany@unt.edu
+

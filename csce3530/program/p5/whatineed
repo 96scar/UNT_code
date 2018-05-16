@@ -1,0 +1,11 @@
+STRUCT vertex
+	adjlist<char> biggggg array jeb says 256 null mem allocate of 256 calloc(256, sizeof(char))
+	weights<int> hugggge array callloc(256, sizeof(int))
+	int dist
+	char path
+	
+main()
+	
+	vertex list
+	vertex list[256] = (vertex*) calloc(256, sizeof(struct vertex));
+	count of vertex

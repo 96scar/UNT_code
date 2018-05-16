@@ -1,0 +1,30 @@
+# JOE state file v1.0
+search
+done
+macros
+done
+files
+done
+find
+done
+replace
+done
+run
+done
+build
+done
+grep
+done
+cmd
+done
+math
+done
+yank
+	"ahfhahfha"
+	"a"
+	"at"
+	"rtu"
+	" "
+done
+file_pos
+done

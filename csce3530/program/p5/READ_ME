@@ -1,0 +1,36 @@
+Scarlett Jones
+CSCE 3530
+Program 5
+Read me file
+
+to clean:
+	type make clean (will remove LS.txt and rou executable file)
+
+To compile: 
+	type make
+	
+To run:
+	type make run
+	
+
+The program opens the file router.txt and fills in the cost table.
+The program reads in the nodes and puts them in the node list.
+I keep track of how many nodes there are.
+After the table is filled out, I can do dijkstra's algorithm.
+There is a list of nodes which tells you the path you took during the algorithm.
+Initially, this only contains the first node.
+For all the nodes:
+	if node is adjacent to start node
+		then D(n) = cost(start, node)
+	else
+		D(n) = infinity
+		
+While(all nodes are not in the path)
+	find node not in path such that D(node) is a minimum
+		add that node to the path
+	For all n adjacenet to node and not in the path
+		D(n) = minimumValue(D(n), D(node) + cost(node, n))
+		new cost to n is either old cost to n or known shortest path cost to node plus cost from node to n
+		
+		
+Print out the routing tables for each node to the screen and the file LS.txt.

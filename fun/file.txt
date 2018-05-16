@@ -1,0 +1,8 @@
+John Harris 50000
+Lisa Smith 75000.487
+Adam Johnson 68500
+Sheila Smith 150000.50
+Tristen Major 75800.76
+Yannic Lennart 58000.55
+Lorena Emil 43000.00
+Tereza Santeri 48000.001

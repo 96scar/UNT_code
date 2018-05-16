@@ -1,0 +1,15 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x86ad450 [shape=record,label="{%0}"];
+	Node0x86ad450 -> Node0x86ada30;
+	Node0x86ad450 -> Node0x86ac5b8;
+	Node0x86ada30 [shape=record,label="{%10}"];
+	Node0x86ac5b8 [shape=record,label="{_ZSt13__check_facetISt5ctypeIcEERKT_PS3_.exit}"];
+	Node0x86ac5b8 -> Node0x86a9cb0;
+	Node0x86ac5b8 -> Node0x86adc78;
+	Node0x86ac5b8 -> Node0x86a9360;
+	Node0x86a9cb0 [shape=record,label="{%17}"];
+	Node0x86adc78 [shape=record,label="{_ZNKSt5ctypeIcE5widenEc.exit}"];
+	Node0x86a9360 [shape=record,label="{%14}"];
+}

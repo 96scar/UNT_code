@@ -1,0 +1,352 @@
+
+
+ONE
+Client sends connection request to server.
+cksum_arr[0]: 2048
+cksum_arr[1]: 2048
+cksum_arr[2]: 56
+cksum_arr[3]: 0
+cksum_arr[4]: 0
+cksum_arr[5]: 0
+cksum_arr[6]: 20482
+cksum_arr[7]: 0
+cksum_arr[8]: 40901
+cksum_arr[9]: 0
+cksum_arr[10]: 0
+cksum_arr[11]: 0
+
+
+TWO
+Client recieves the server's connection granted response.
+rec_arr[0]: 2048
+rec_arr[1]: 2048
+rec_arr[2]: 22
+rec_arr[3]: 0
+rec_arr[4]: 57
+rec_arr[5]: 0
+rec_arr[6]: 20498
+rec_arr[7]: 0
+rec_arr[8]: 40862
+rec_arr[9]: 0
+rec_arr[10]: 0
+rec_arr[11]: 0
+
+
+THREE
+Client sends acknowledgment to server.
+cksum_arr[0]: 2048
+cksum_arr[1]: 2048
+cksum_arr[2]: 57
+cksum_arr[3]: 0
+cksum_arr[4]: 23
+cksum_arr[5]: 0
+cksum_arr[6]: 20496
+cksum_arr[7]: 0
+cksum_arr[8]: 40863
+cksum_arr[9]: 0
+cksum_arr[10]: 0
+cksum_arr[11]: 0
+
+
+Client sends data segment to server.
+cksum_data_arr[0]: 2048
+cksum_data_arr[1]: 2048
+cksum_data_arr[2]: 57
+cksum_data_arr[3]: 0
+cksum_data_arr[4]: 23
+cksum_data_arr[5]: 0
+cksum_data_arr[6]: 20496
+cksum_data_arr[7]: 0
+cksum_data_arr[8]: 43275
+cksum_data_arr[9]: 0
+cksum_data_arr[10]: 0
+cksum_data_arr[11]: 0
+
+
+Client receives data ack from the server.
+rec_data_arr[0]: 2048
+rec_data_arr[1]: 2048
+rec_data_arr[2]: 23
+rec_data_arr[3]: 0
+rec_data_arr[4]: 58
+rec_data_arr[5]: 0
+rec_data_arr[6]: 20496
+rec_data_arr[7]: 0
+rec_data_arr[8]: 23510
+rec_data_arr[9]: 0
+rec_data_arr[10]: 0
+rec_data_arr[11]: 0
+
+
+Client sends data segment to server.
+cksum_data_arr[0]: 2048
+cksum_data_arr[1]: 2048
+cksum_data_arr[2]: 58
+cksum_data_arr[3]: 0
+cksum_data_arr[4]: 24
+cksum_data_arr[5]: 0
+cksum_data_arr[6]: 20496
+cksum_data_arr[7]: 0
+cksum_data_arr[8]: 64930
+cksum_data_arr[9]: 0
+cksum_data_arr[10]: 0
+cksum_data_arr[11]: 0
+
+
+Client receives data ack from the server.
+rec_data_arr[0]: 2048
+rec_data_arr[1]: 2048
+rec_data_arr[2]: 24
+rec_data_arr[3]: 0
+rec_data_arr[4]: 59
+rec_data_arr[5]: 0
+rec_data_arr[6]: 20496
+rec_data_arr[7]: 0
+rec_data_arr[8]: 23508
+rec_data_arr[9]: 0
+rec_data_arr[10]: 0
+rec_data_arr[11]: 0
+
+
+Client sends data segment to server.
+cksum_data_arr[0]: 2048
+cksum_data_arr[1]: 2048
+cksum_data_arr[2]: 59
+cksum_data_arr[3]: 0
+cksum_data_arr[4]: 25
+cksum_data_arr[5]: 0
+cksum_data_arr[6]: 20496
+cksum_data_arr[7]: 0
+cksum_data_arr[8]: 45727
+cksum_data_arr[9]: 0
+cksum_data_arr[10]: 0
+cksum_data_arr[11]: 0
+
+
+Client receives data ack from the server.
+rec_data_arr[0]: 2048
+rec_data_arr[1]: 2048
+rec_data_arr[2]: 25
+rec_data_arr[3]: 0
+rec_data_arr[4]: 60
+rec_data_arr[5]: 0
+rec_data_arr[6]: 20496
+rec_data_arr[7]: 0
+rec_data_arr[8]: 23506
+rec_data_arr[9]: 0
+rec_data_arr[10]: 0
+rec_data_arr[11]: 0
+
+
+Client sends data segment to server.
+cksum_data_arr[0]: 2048
+cksum_data_arr[1]: 2048
+cksum_data_arr[2]: 60
+cksum_data_arr[3]: 0
+cksum_data_arr[4]: 26
+cksum_data_arr[5]: 0
+cksum_data_arr[6]: 20496
+cksum_data_arr[7]: 0
+cksum_data_arr[8]: 7107
+cksum_data_arr[9]: 0
+cksum_data_arr[10]: 0
+cksum_data_arr[11]: 0
+
+
+Client receives data ack from the server.
+rec_data_arr[0]: 2048
+rec_data_arr[1]: 2048
+rec_data_arr[2]: 26
+rec_data_arr[3]: 0
+rec_data_arr[4]: 61
+rec_data_arr[5]: 0
+rec_data_arr[6]: 20496
+rec_data_arr[7]: 0
+rec_data_arr[8]: 23504
+rec_data_arr[9]: 0
+rec_data_arr[10]: 0
+rec_data_arr[11]: 0
+
+
+Client sends data segment to server.
+cksum_data_arr[0]: 2048
+cksum_data_arr[1]: 2048
+cksum_data_arr[2]: 61
+cksum_data_arr[3]: 0
+cksum_data_arr[4]: 27
+cksum_data_arr[5]: 0
+cksum_data_arr[6]: 20496
+cksum_data_arr[7]: 0
+cksum_data_arr[8]: 52391
+cksum_data_arr[9]: 0
+cksum_data_arr[10]: 0
+cksum_data_arr[11]: 0
+
+
+Client receives data ack from the server.
+rec_data_arr[0]: 2048
+rec_data_arr[1]: 2048
+rec_data_arr[2]: 27
+rec_data_arr[3]: 0
+rec_data_arr[4]: 62
+rec_data_arr[5]: 0
+rec_data_arr[6]: 20496
+rec_data_arr[7]: 0
+rec_data_arr[8]: 23502
+rec_data_arr[9]: 0
+rec_data_arr[10]: 0
+rec_data_arr[11]: 0
+
+
+Client sends data segment to server.
+cksum_data_arr[0]: 2048
+cksum_data_arr[1]: 2048
+cksum_data_arr[2]: 62
+cksum_data_arr[3]: 0
+cksum_data_arr[4]: 28
+cksum_data_arr[5]: 0
+cksum_data_arr[6]: 20496
+cksum_data_arr[7]: 0
+cksum_data_arr[8]: 28772
+cksum_data_arr[9]: 0
+cksum_data_arr[10]: 0
+cksum_data_arr[11]: 0
+
+
+Client receives data ack from the server.
+rec_data_arr[0]: 2048
+rec_data_arr[1]: 2048
+rec_data_arr[2]: 28
+rec_data_arr[3]: 0
+rec_data_arr[4]: 63
+rec_data_arr[5]: 0
+rec_data_arr[6]: 20496
+rec_data_arr[7]: 0
+rec_data_arr[8]: 23500
+rec_data_arr[9]: 0
+rec_data_arr[10]: 0
+rec_data_arr[11]: 0
+
+
+Client sends data segment to server.
+cksum_data_arr[0]: 2048
+cksum_data_arr[1]: 2048
+cksum_data_arr[2]: 63
+cksum_data_arr[3]: 0
+cksum_data_arr[4]: 29
+cksum_data_arr[5]: 0
+cksum_data_arr[6]: 20496
+cksum_data_arr[7]: 0
+cksum_data_arr[8]: 45421
+cksum_data_arr[9]: 0
+cksum_data_arr[10]: 0
+cksum_data_arr[11]: 0
+
+
+Client receives data ack from the server.
+rec_data_arr[0]: 2048
+rec_data_arr[1]: 2048
+rec_data_arr[2]: 29
+rec_data_arr[3]: 0
+rec_data_arr[4]: 64
+rec_data_arr[5]: 0
+rec_data_arr[6]: 20496
+rec_data_arr[7]: 0
+rec_data_arr[8]: 23498
+rec_data_arr[9]: 0
+rec_data_arr[10]: 0
+rec_data_arr[11]: 0
+
+
+Client sends data segment to server.
+cksum_data_arr[0]: 2048
+cksum_data_arr[1]: 2048
+cksum_data_arr[2]: 64
+cksum_data_arr[3]: 0
+cksum_data_arr[4]: 30
+cksum_data_arr[5]: 0
+cksum_data_arr[6]: 20496
+cksum_data_arr[7]: 0
+cksum_data_arr[8]: 55181
+cksum_data_arr[9]: 0
+cksum_data_arr[10]: 0
+cksum_data_arr[11]: 0
+
+
+Client receives data ack from the server.
+rec_data_arr[0]: 2048
+rec_data_arr[1]: 2048
+rec_data_arr[2]: 30
+rec_data_arr[3]: 0
+rec_data_arr[4]: 65
+rec_data_arr[5]: 0
+rec_data_arr[6]: 20496
+rec_data_arr[7]: 0
+rec_data_arr[8]: 23496
+rec_data_arr[9]: 0
+rec_data_arr[10]: 0
+rec_data_arr[11]: 0
+
+
+FOUR
+Client sends close request to server.
+cksum_arr[0]: 2048
+cksum_arr[1]: 2048
+cksum_arr[2]: 38
+cksum_arr[3]: 0
+cksum_arr[4]: 0
+cksum_arr[5]: 0
+cksum_arr[6]: 20481
+cksum_arr[7]: 0
+cksum_arr[8]: 40920
+cksum_arr[9]: 0
+cksum_arr[10]: 0
+cksum_arr[11]: 0
+
+
+FIVE
+Client receives acknowledgment from server.
+rec_arr[0]: 2048
+rec_arr[1]: 2048
+rec_arr[2]: 42
+rec_arr[3]: 0
+rec_arr[4]: 39
+rec_arr[5]: 0
+rec_arr[6]: 20496
+rec_arr[7]: 0
+rec_arr[8]: 40862
+rec_arr[9]: 0
+rec_arr[10]: 0
+rec_arr[11]: 0
+
+
+SIX
+Client recieves close acknowledgment from server.
+rec_arr[0]: 2048
+rec_arr[1]: 2048
+rec_arr[2]: 93
+rec_arr[3]: 0
+rec_arr[4]: 39
+rec_arr[5]: 0
+rec_arr[6]: 20481
+rec_arr[7]: 0
+rec_arr[8]: 40826
+rec_arr[9]: 0
+rec_arr[10]: 0
+rec_arr[11]: 0
+
+
+SEVEN
+Client sends acknowledgment to server.
+cksum_arr[0]: 2048
+cksum_arr[1]: 2048
+cksum_arr[2]: 39
+cksum_arr[3]: 0
+cksum_arr[4]: 94
+cksum_arr[5]: 0
+cksum_arr[6]: 20496
+cksum_arr[7]: 0
+cksum_arr[8]: 40810
+cksum_arr[9]: 0
+cksum_arr[10]: 0
+cksum_arr[11]: 0

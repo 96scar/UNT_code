@@ -1,0 +1,19 @@
+Scarlett Jones
+CSCE 3530
+9/28/2016
+Program 1 -- READ_ME file
+
+There are two files needed to start running this program.
+serverA.c needs to be ran on cse01 machine first, with the port number in the second command line argument.
+client.c needs to be ran on cse02 machine second, with the port number in the second command line argument.
+Then enter the website on the client on cse02 machine.
+The server recieves the website from the client.
+The server then creates the get request text by echoing it and redirecting the input to a file.
+The server pipes the request file into netcat of the website. This asks the webserver for the HTML file of the website.
+The server saves this HTML file into a text file.
+The server opens this HTML file and puts it into a buffer.
+The server sends this buffer to the client.
+The client reads this buffer text from the server.
+The client opens a new file of its own to put this buffer text into.
+
+Sometimes, the program has a segmentation fault, probably when the website is really big and the buffer or file can't hold that much data.

@@ -1,0 +1,7 @@
+Script started on Wed 22 Oct 2014 09:57:21 PM CDT
+]0;srj0101@cse06: ~/testsrj0101@cse06:~/test$ gcc test.c p[K-o test.out
+]0;srj0101@cse06: ~/testsrj0101@cse06:~/test$ ./test.out
+Test script]0;srj0101@cse06: ~/testsrj0101@cse06:~/test$ exit
+exit
+
+Script done on Wed 22 Oct 2014 09:57:48 PM CDT

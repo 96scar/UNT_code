@@ -1,0 +1,24 @@
+Checking set sets[1]
+{0, 27, 109}
+Checking set sets[2]
+{27, 34, 43}
+Checking set sets[3] before intersection
+{}
+Performing sets[3] = sets[1] & sets[2] 
+{27}
+The intersection of sets[1] and sets[2] is 
+{27}
+Checking set sets[3] before union
+Performing sets[3] = sets[1] | sets[2] 
+
+The union of sets[1] and sets[2] is 
+{0, 27, 34, 43, 109}
+About to test cardinality
+
+The cardinality of S3 = 5
+
+{0, 109}
+About to test removeFromSet
+
+S4 after 109 is removed = 
+{0}

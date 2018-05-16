@@ -1,0 +1,16 @@
+add,name,Corey Jones,
+add,name,denise jones,
+add,name,scarlett jones,
+add,name,river jones,
+add,name,sailor jones,
+add,name,summer jones,
+add,address1,id001,1704 Northbrook Lane
+add,city,id001,Sherman
+add,state,id001,TX
+add,zip,id001,75092
+search,Corey Jones,,
+search,karen spence,,
+search,denise jones,,
+search,scarlett jones,,
+print,all,,
+print,id001,,

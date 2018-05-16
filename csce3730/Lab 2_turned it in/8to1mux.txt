@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY 8to1mux IS
+	PORT( D : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+			  S : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+			  F : OUT STD_LOGIC );
+END 8to1mux;
+
+ARCHITECHTURE behavioral of 8to1mux IS
+BEGIN
+	PROCESS(D, S)
+	BEGIN
+		CASE S IS
+			WHEN "000" => F <= D(0);
+			WHEN "001" => F <= D(1);
+			WHEN "010" => F <= D(2);
+			WHEN "011" => F <= D(3);
+			WHEN "100" => F <= D(4);
+			WHEN "101" => F <= D(5);
+			WHEN "110" => F <= D(6);
+			WHEN "111" => F <= D(7);
+		END CASE;
+	END PROCESS;
+END behavioral;

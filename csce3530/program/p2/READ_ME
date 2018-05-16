@@ -1,0 +1,32 @@
+Scarlett Jones
+CSCE 3530
+10/26/2016
+Program 2 -- READ_ME file
+
+There are two files needed to start running this program.
+serverA.c needs to be ran on cse01 machine first, with the port number in the second command line argument.
+client.c needs to be ran on cse02 machine second, with the port number in the second command line argument.
+Then enter the website on the client on cse02 machine.
+The server recieves the website from the client.
+If the website is on the blacklist for the current time, then don't provide that website to the client. Send a message to the client that it is blocked.
+Otherwise,
+Check to see if there is a cached version of the website.
+If there is, then do a head request to check to see if it has been updated.
+If the HTTP response if 200 then it has been updated and needs to be recached.
+If it hasn't been updated give the cached version to the client.
+If it has been updated, then do the get request below.
+The server then creates the get request text by echoing it and redirecting the input to a file.
+The server pipes the request file into netcat of the website. This asks the webserver for the HTML file of the website.
+The server saves this HTML file into a text file. (create a file named YYYYMMDDhhmmss hour in 24 hour format -- when the website was visited)
+(echo date +%Y%m%d%H%M%S) = filename
+Create a file called list.txt that stores the URL of the webpage name next to the associated cached webpage filename.
+The list.txt only stores 5 recent URLS. If a file is not in the list.txt it should be deleted.
+After the page has been cached then forward it to the client.
+Verify returned page is same as browswer returned page.
+If HTTP response is NOT 200, do not cache the webpage. Forward the HTTP response to the client.
+The server opens this HTML file and puts it into a buffer.
+The server sends this buffer to the client.
+The client reads this buffer text from the server.
+The client opens a new file of its own to put this buffer text into.
+
+Sometimes, the program has a segmentation fault, probably when the website is really big and the buffer or file can't hold that much data.

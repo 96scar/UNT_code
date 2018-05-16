@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/srj0101/textbook'
+let g:netrw_dirhist_2='/home/srj0101/homework'
+let g:netrw_dirhist_3='/home/srj0101/lab/lab1/programs'
+let g:netrw_dirhist_4='/home/srj0101/homework'
+let g:netrw_dirhist_5='/home/srj0101/test'
+let g:netrw_dirhist_6='/home/srj0101/csce1040/homework/hw5'
+let g:netrw_dirhist_7='fun'
+let g:netrw_dirhist_8='/home/srj0101/fun'

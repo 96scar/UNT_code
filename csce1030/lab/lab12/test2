@@ -1,0 +1,78 @@
+Script started on Thu 13 Nov 2014 10:45:36 AM CST
+]0;srj0101@cse04: ~/lab/lab12srj0101@cse04:~/lab/lab12$ gcc -g -Wall example2.c
+example2.c: In function ‘main’:
+example2.c:11:11: warning: ‘b’ is used uninitialized in this function [-Wuninitialized]
+]0;srj0101@cse04: ~/lab/lab12srj0101@cse04:~/lab/lab12$ gdb a.out
+GNU gdb (Ubuntu/Linaro 7.4-2012.04-0ubuntu2.1) 7.4-2012.04
+Copyright (C) 2012 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-linux-gnu".
+For bug reporting instructions, please see:
+<http://bugs.launchpad.net/gdb-linaro/>...
+Reading symbols from /home/srj0101/lab/lab12/a.out...done.
+(gdb) b setint
+Breakpoint 1 at 0x804844b: file example2.c, line 18.
+(gdb) r
+Starting program: /home/srj0101/lab/lab12/a.out 
+
+Breakpoint 1, setint (ip=0xbffff6b8, i=10) at example2.c:18
+18	    *ip = i;
+(gdb) display i
+1: i = 10
+(gdb) display ip
+2: ip = (int *) 0xbffff6b8
+(gdb) display *ip
+3: *ip = 134513769
+(gdb) n
+19	} 
+3: *ip = 10
+2: ip = (int *) 0xbffff6b8
+1: i = 10
+(gdb) n
+main () at example2.c:9
+9	    printf("a= %d\n",a);
+(gdb) display a
+4: a = 10
+(gdb) display b
+5: b = (int *) 0x2d8ff4
+(gdb) n
+a= 10
+11	    setint(b, 10);
+5: b = (int *) 0x2d8ff4
+4: a = 10
+(gdb) n
+
+Breakpoint 1, setint (ip=0x2d8ff4, i=10) at example2.c:18
+18	    *ip = i;
+3: *ip = 1727868
+2: ip = (int *) 0x2d8ff4
+1: i = 10
+(gdb) n
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048451 in setint (ip=0x2d8ff4, i=10) at example2.c:18
+18	    *ip = i;
+3: *ip = 1727868
+2: ip = (int *) 0x2d8ff4
+1: i = 10
+(gdb) n
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+(gdb) n
+The program is not being run.
+(gdb) list
+13	    return 0;
+14	}
+15	
+16	void setint(int *ip, int i) 
+17	{
+18	    *ip = i;
+19	} 
+(gdb) q
+]0;srj0101@cse04: ~/lab/lab12srj0101@cse04:~/lab/lab12$ e[Kexit
+
+Script done on Thu 13 Nov 2014 10:48:10 AM CST

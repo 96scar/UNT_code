@@ -1,0 +1,84 @@
+Script started on Wed 22 Oct 2014 10:12:09 PM CDT
+]0;srj0101@cse06: ~/homeworksrj0101@cse06:~/homework$ ./homework4.out
+
+CSCE 1030
+Program 4
+Scarlett Jones
+srj0101
+ScarlettJones@my.unt.edu
+
+Welcome to the CSCE 1030 StoreFront!
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 1
+
+Quantity of Office Chairs: 5
+
+Current Subtotal: $299.95
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 2
+
+Quantity of File Cabinets: 5
+
+Current Subtotal: $449.90
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 3
+
+Quantity of Desks: 5
+
+Current Subtotal: $949.85
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 4
+
+Quantity of Bookcases: 5
+
+Current Subtotal: $1174.80
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 5
+
+
+Thank you for shopping at the CSCE 1030 StoreFront!
+
+Office Chairs: $299.95
+File Cabinets: $149.95
+Desks:	       $499.95
+Bookcases:     $224.95
+Subtotal:      $1174.80
+Discount:      $117.48
+Tax:           $87.23
+Shipping:      $25.00
+Total:         $1169.55
+
+]0;srj0101@cse06: ~/homeworksrj0101@cse06:~/homework$ exit
+exit
+
+Script done on Wed 22 Oct 2014 10:12:35 PM CDT

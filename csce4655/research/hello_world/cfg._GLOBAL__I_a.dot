@@ -1,0 +1,5 @@
+digraph "CFG for '_GLOBAL__I_a' function" {
+	label="CFG for '_GLOBAL__I_a' function";
+
+	Node0x82f4ff8 [shape=record,label="{%0}"];
+}

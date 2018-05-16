@@ -1,0 +1,8 @@
+OBJS = main.o sum.o
+
+sum: $(OBJS)
+	gcc -o $@ $(OBJS)
+
+%.o: %.c sum.h
+	gcc -c $*.c
+

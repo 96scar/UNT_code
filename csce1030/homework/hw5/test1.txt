@@ -1,0 +1,68 @@
+Script started on Mon 10 Nov 2014 11:26:22 PM CST
+]0;srj0101@cse04: ~/homework/hw5srj0101@cse04:~/homework/hw5$ exitclear./program5.outgcc program5.c -o program5.out[16P./program5.out
+
+CSCE 1030
+Program 5
+Scarlett Jones
+srj0101
+ScarlettJones@my.unt.edu
+
+
+
+Welcome to the UNT grade database.
+
+
+
+Input the information for the database.
+
+1234 90 70 50 5678 80 100 90  
+-1
+
+Please enter what information you want out of the database:
+1. Student grade data
+2. Student grade average
+3. Class average for an assignment
+4. Exit
+>1
+
+Please enter student EUID: 1234
+EUID: 1234
+Homework Average: 90.00
+Exam 1: 70
+Exam 2: 50
+
+Please enter what information you want out of the database:
+1. Student grade data
+2. Student grade average
+3. Class average for an assignment
+4. Exit
+>2
+
+Please enter student EUID: 1234
+EUID: 1234
+Student Average: 75.00
+Letter Grade: C
+Please enter what information you want out of the database:
+1. Student grade data
+2. Student grade average
+3. Class average for an assignment
+4. Exit
+>3
+
+Please enter the assignment: 
+Choose from homework, exam1, and exam2: exam2
+Class Exam 2 Average: 70.000000
+
+Please enter what information you want out of the database:
+1. Student grade data
+2. Student grade average
+3. Class average for an assignment
+4. Exit
+>4
+
+Goodbye!
+
+]0;srj0101@cse04: ~/homework/hw5srj0101@cse04:~/homework/hw5$ exit
+exit
+
+Script done on Mon 10 Nov 2014 11:27:36 PM CST

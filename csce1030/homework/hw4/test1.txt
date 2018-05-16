@@ -1,0 +1,118 @@
+Script started on Wed 22 Oct 2014 10:08:50 PM CDT
+]0;srj0101@cse06: ~/homeworksrj0101@cse06:~/homework$ .[Kgcc h[K[K[K[K[K./homework4.out
+
+CSCE 1030
+Program 4
+Scarlett Jones
+srj0101
+ScarlettJones@my.unt.edu
+
+Welcome to the CSCE 1030 StoreFront!
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 6
+
+Please input a correct menu number.
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 1
+
+Quantity of Office Chairs: -1
+
+You cannot buy a negative number of office chairs.
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 1
+
+Quantity of Office Chairs: 1
+
+Current Subtotal: $59.99
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 2
+
+Quantity of File Cabinets: 1
+
+Current Subtotal: $89.98
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 3
+
+Quantity of Desks: 1
+
+Current Subtotal: $189.97
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 4
+
+Quantity of Bookcases: 1
+
+Current Subtotal: $234.96
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 1
+
+Quantity of Office Chairs: 1
+
+Current Subtotal: $294.95
+
+Enter the number corresponding to the product you wish to purchase:
+1: Office Chairs $59.99 each
+2: File Cabinets $29.99 each
+3: Desks	 $99.99 each
+4: Bookcases	 $44.99 each
+5: Checkout	 	    
+Menu option chosen: 5
+
+
+Thank you for shopping at the CSCE 1030 StoreFront!
+
+Office Chairs: $119.98
+File Cabinets: $29.99
+Desks:	       $99.99
+Bookcases:     $44.99
+Subtotal:      $294.95
+Discount:      $0.00
+Tax:           $24.33
+Shipping:      $25.00
+Total:         $344.28
+
+]0;srj0101@cse06: ~/homeworksrj0101@cse06:~/homework$ exit
+exit
+
+Script done on Wed 22 Oct 2014 10:10:46 PM CDT

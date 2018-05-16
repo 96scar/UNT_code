@@ -1,0 +1,22 @@
+
+test123
+
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    write("Day: ")
+NameError: name 'write' is not defined
+adddate: command not found
+
+test123
+
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    write("Day: ")
+NameError: name 'write' is not defined
+
+test123
+
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    write("Day: ")
+NameError: name 'write' is not defined

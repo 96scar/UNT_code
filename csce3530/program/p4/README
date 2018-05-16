@@ -1,0 +1,195 @@
+Scarlett Jones
+CSCE 3530
+Program 4
+Due 11/23/16 at midnight
+README file
+
+Added the following requirements to program 3 to create program 4.
+"The client should be able to transfer a text file to the server. 
+The file name is passed as an argument to the client program along with the port number. 
+Also, the transferred file has to be written on to a file on the server side."
+
+
+To compile: 
+gcc server.c -o pserver
+gcc client.c -o pclient
+
+To execute:
+./pserver <portnumber>
+./pclient <portnumber> <filename>
+
+To test: 
+Look at the output on the screens or in the server.out and client.out files.
+Compare the sent and received data. Make sure the data is correct.
+Make sure to delete client.out and server.out each time you rerun the code. 
+The files will be created if they don't exist, but will be appended to if they do exist.
+Open the file copy.txt to see that the server copied the file from the file opened correctly.
+
+Below is an in depth description:
+First run the server.c file on the cse01 machine.
+Then run the client.c file on the cse02 machine.
+Each of these must have 2 arguments to main to work. The first is the executable name and the second is the port number.
+The port number must match on both in order to connect the server and client. They communicate over the port with sockets.
+This port number is used to fill in the tcp segment source and destination fields on both the client and the server.
+The header length is only going to be 20 bytes because there are no options set. There are 5 32bit words, so the header length is 5. 
+In order to set the header length, represent it as binary value 0101. Then put that at the beginning of the 16bit tcp segment header flags field.
+The header flags field is set with the hexadecimal value.
+
+To make initial sequence numbers random, I added a random number generator on both the client and server. 
+The random number is picked to be between 0 and 100.
+
+There are two unsigned short int arrays in both files that are used to send and receive data between client and server.
+The cksum_arr[12] gets turned into a string seperated by spaces.
+The string that is received gets turned into the rec_arr[12] by tokenizing by spaces.
+
+I open each of the output files in append mode to be able to print the segments sent and received to them.
+I also print the same information to the screen at the same time.
+
+The cksum_arr is filled up with the data from the tcp_segment that is set.
+
+CLIENT ONE
+The client sends a connection request to the server.
+The sequence number is random. 
+The ack number is 0. 
+The hdr_flags is 0101 0000 0000 0010 -> 0x5002. (header is 5 and SYN bit is 1)
+The rest is initially set to 0.
+The cksum_arr is filled with the tcp_seg data.
+The checksum is computed. (this part was provided by Dr. Robin)
+The checksum value gets set in the tcp segment.
+The cksum_arr is refilled with the new tcp segment data.
+I print the cksum_arr to the screen and client.out.
+The cksum_arr is printed to a string, separated by spaces.
+The client writes this string to the socket.
+
+SERVER ONE
+Server receives client's connection request.
+The server reads a string from the socket.
+I tokenized the string spaces and set the values in the string to the rec_arr.
+I print the rec_arr to the screen and server.out.
+
+SERVER TWO
+Server sends connection granted response.
+The sequence number is random. 
+The ack number is rec_arr[2] + 1 (initial client sequence number + 1).
+The hdr_flags is 0101 0000 0001 0010 -> 0x5012. (header is 5 and SYN bit is 1 and ACK bit is 1)
+The rest is zero.
+The cksum_arr is filled with the tcp_seg data.
+The checksum is computed.
+The checksum value is put into the tcp segment.
+The cksum_arr is refilled with the new tcp segment data.
+I print the cksum_arr to the screen and server.out.
+The cksum_arr is printed to a string, separated by spaces.
+The server writes this string to the socket.
+
+CLIENT TWO
+The client receives the server's connection granted response.
+The client reads a string from the socket.
+I tokenized the string spaces and set the values in the string to the rec_arr.
+I print rec_arr to the screen and client.out.
+
+CLIENT THREE
+The client sends acknowledgment to server.
+The sequence number is set to cksum_arr[2] + 1 (initial client sequence number + 1).
+The ack number is set to rec_arr[2] + 1 (initial server sequence number + 1).
+The hdr_flags is 0101 0000 0001 0000 -> 0x5010. (header is 5 and ACK bit is 1)
+The rest is set to 0.
+The cksum_arr is filled with the tcp_seg data.
+The checksum is computed.
+The checksum value is put into the tcp segment.
+The cksum_arr is refilled witht the new tcp_seg data.
+I print the cksum_arr to the screen and the client.out file.
+I print the cksum_arr to a string separated by spaces.
+I write the string to the socket.
+
+SERVER THREE
+Server recieves acknowledgment from client.
+The server reads a string from the socket.
+I tokenized the string spaces and set the values in the string to the rec_arr.
+I print rec_arr to the screen and server.out.
+
+
+This is where I send the data from the client to the server.
+The client writes to the server 8 times because the file is 1024 bytes and i send 128 bytes at a time.
+The server puts this data into a file.
+
+
+
+CLIENT FOUR
+Client sends close request to server.
+The initial sequence number is random.
+The initial ack number is 0.
+The hdr_flags is 0101 0000 0000 0001 -> 0x5001. (header is 5 and FIN bit is 1)
+The rest is set to 0.
+The cksum_arr is filled with the tcp_seg data.
+The checksum is calculated.
+The cksum_arr is refilled with the new tcp_seg data.
+I print out the cksum_arr to the screen and client.out.
+I print the cksum_arr to a string separated by spaces.
+Client writes the string to the socket.
+
+SERVER FOUR
+Server receives client's close request.
+The server reads a string from the socket.
+I tokenize the string by space and set the values in the string to the rec_arr.
+I print rec_arr to the screen and server.out.
+
+SERVER FIVE
+Server sends an acknowledgment to client.
+Initial sequence number is random.
+Ack number is set to rec_arr[2] + 1 (initial client sequence number + 1).
+The hdr_flags is set to 0101 0000 0001 0000 -> 0x5010. (header is 5 and ACK bit is 1)
+The rest is 0.
+The cksum_arr is filled with the tcp_seg data.
+The checksum is calculated.
+The cksum_arr is refilled with the new tcp_seg data.
+I print out the cksum_arr to the screen and server.out.
+I print the cksum_arr to a string separated by spaces.
+Server writes the string to the socket.
+
+CLIENT FIVE
+Client receives acknowledgment from server.
+The client reads a string from the socket.
+I tokenize the string by spaces and set the values in the string to the rec_arr.
+I print rec_arr to the screen and client.out.
+
+SERVER SIX
+Server sends close acknowledgment to client.
+Initial sequence number is random.
+Ack number is set to rec_arr[2] + 1 (initial client seq# + 1)
+The hdr_flags is set to 0101 0000 0000 0001 -> 0x5001. (header is 5 and FIN bit is 1)
+The rest is 0.
+The cksum_arr is filled with the tcp_seg data.
+The checksum is calculated. 
+The cksum_arr is filled with the new tcp_seg data.
+I print the cksum_arr to the screen and server.out.
+I print the cksum_arr to a string separated by spaces.
+Server writes the string to the socket.
+
+CLIENT SIX
+Client recieves close acknowledgment from server.
+Client reads string from socket.
+I tokenize string by spaces and set the values in the string to the rec_arr.
+I print rec_arr to the screen and client.out.
+
+CLIENT SEVEN
+Client sends acknowledgment to server.
+Sequence number is cksum_arr[2] + 1 (initial client sequence number + 1).
+Ack number is rec_arr[2] + 1 (initial server sequence number + 1).
+The hdr_flags is set to 0101 0000 0001 0000 -> 0x5010. (header is 5 and ACK bit is 1)
+The rest is 0.
+The cksum_arr is filled with the tcp_seg data.
+The checksum is calculated.
+The cksum_arr is refilled with the new tcp_seg data.
+I print the cksum_arr to the screen and client.out.
+I print the cksum_arr to a string separated by spaces.
+The client writes the string to the socket.
+
+SERVER SEVEN
+The server receives acknowledgment from client.
+The server reads a string from the socket.
+I tokenize the string by spaces and set the values in the string to the rec_arr.
+I print rec_arr to the screen and server.out.
+
+The output will print to the screen and to the server.out and client.out files.
+
+I close the files and the sockets in both the client and the server.

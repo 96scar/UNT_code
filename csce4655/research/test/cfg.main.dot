@@ -1,0 +1,15 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+	color="magenta";
+
+	Node0x83ad0f8 [shape=record,label="{%0}"];
+	Node0x83ad0f8 -> Node0x83b1090;
+	Node0x83b1090 [shape=record,label="{%2|{<s0>T|<s1>F}}"];
+	Node0x83b1090:s0 -> Node0x83b11c0;
+	Node0x83b1090:s1 -> Node0x83b11f0;
+	Node0x83b11c0 [shape=record,label="{%5}"];
+	Node0x83b11c0 -> Node0x83b1818;
+	Node0x83b1818 [shape=record,label="{%21}"];
+	Node0x83b1818 -> Node0x83b1090;
+	Node0x83b11f0 [shape=record,label="{%24}"];
+}

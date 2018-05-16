@@ -1,0 +1,13 @@
+/*This is my second lab session. This is Task A.*/
+/*Name: Scarlett Jones
+  Date: 9/4/14 
+  Instructor: Thomas
+  Purpose: The purpose of this lab is to find and fix broken code. */
+
+#include <stdio.h>
+
+int main()
+{
+   printf("\nHello\nWorld\n\nScarlett Jones\n\nThomas");
+   return 0;
+}

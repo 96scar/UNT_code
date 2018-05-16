@@ -1,0 +1,9 @@
+Scarlett Jones
+Keathly
+4/21/15
+text file on polymorphism
+
+When I compiled the code as is, at first the salaries were the same.
+After I added the word virtual before Payment in the base class, the salaries printed out were different.
+This result was what we expected and wanted.
+However, to do this, we needed to be able to redefine the member of the base class in a derived class. To do this, we had to make it virtual.

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/srj0101/Desktop/Lab2_ScarlettJones/Lab2_csce3730_srj0101/mux8to1.xst" -ofn "C:/Users/srj0101/Desktop/Lab2_ScarlettJones/Lab2_csce3730_srj0101/mux8to1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mux8to1_UCF.ucf -p xc7a100t-csg324-3 mux8to1.ngc mux8to1.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mux8to1_map.ncd mux8to1.ngd mux8to1.pcf 
+par -w -intstyle ise -ol high -mt off mux8to1_map.ncd mux8to1.ncd mux8to1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mux8to1.twx mux8to1.ncd -o mux8to1.twr mux8to1.pcf -ucf mux8to1_UCF.ucf 
+bitgen -intstyle ise -f mux8to1.ut mux8to1.ncd 

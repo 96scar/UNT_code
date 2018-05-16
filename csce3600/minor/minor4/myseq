@@ -1,0 +1,54 @@
+#! /bin/bash
+
+#Author: Scarlett Jones
+#EUID: srj0101
+#email: ScarlettJones@my.unt.edu
+#ID: 11026836
+#Description: prints a sequence of integers to the screen based on the command line arguments.
+
+math() 
+{
+	if [ $STOP -lt 0 ]; then #if the stop number is negative
+		while [ $ST -ge $STOP ] #while start is greater than or equal to stop
+		do
+			echo $ST
+			let ST=ST+STEP #increment start
+		done		
+	else #if the numbers are positive
+		while [ $ST -le $STOP ] #while start is less than or equal to stop
+		do
+			echo $ST
+			let ST=ST+STEP #increment start
+		done
+	fi
+} 
+
+#check the number of arguments
+if [[ $# == 0 || $# -gt 3 ]]; then #0 arguments or more than 2 arguments is incorrect usage
+	echo "usage: myseq [start] stop [step]"
+	exit 1
+elif [ $# == 1 ]; then #stop at number. start and step are 1
+	ST=1
+	STEP=1
+	STOP=$1
+elif [ $# == 2 ]; then #start at number, stop at number. step is 1.
+	ST=$1
+	STOP=$2
+	if [ $STOP -lt $ST ]; then #stop is less than start, subtract step
+		STEP=-1
+	else
+		STEP=1
+	fi
+elif [ $# == 3 ]; then #start at number, stop at number, step by number
+	ST=$1
+	STOP=$2
+	STEP=$3
+	if [ $STOP -lt $ST ]; then #stop is less than start, negate step value
+		let STEP=($STEP)*-1 #let allows mathmatical operations
+	fi
+else
+	echo "usage: myseq [start] stop [step]"
+	exit 1
+fi
+
+math
